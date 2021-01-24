@@ -29,17 +29,17 @@ const ContentStyles = styled.div`
 `;
 
 export default function Layout({ children }) {
-    return (
-        <>
-            <GlobalStyles />
-            <Typography />
-            <SiteBorderStyles>
-                <ContentStyles>
-                    <Nav />
-                    {children}
-                    <Footer />
-                </ContentStyles>
-            </SiteBorderStyles>
-        </>
-    );
+  return (
+    <>
+      <GlobalStyles />
+      <Typography />
+      <SiteBorderStyles>
+        <ContentStyles>
+          <Nav />
+          {children}
+          <Footer />
+        </ContentStyles>
+      </SiteBorderStyles>
+    </>
+  );
 }

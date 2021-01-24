@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styled  from 'styled-components'
+import styled from 'styled-components';
 import Logo from './Logo';
 
 const NavStyles = styled.nav`
@@ -46,30 +46,30 @@ const NavStyles = styled.nav`
       color: var(--red);
     } */
   }
-`
+`;
 
 export default function Nav() {
-    return (
-        <NavStyles>
-            <ul>
-                <li>
-                    <Link to='/'>Hot now</Link>
-                </li>
-                <li>
-                    <Link to='/pizzas/'>Pizza Menu</Link>
-                </li>
-                <li>
-                    <Link to='/'>
-                        <Logo/>
-                    </Link>
-                </li>
-                <li>
-                    <Link to='/slicemasters'>SliceMasters</Link>
-                </li>
-                <li>
-                    <Link to='/order'>Order Ahead!</Link>
-                </li>
-            </ul>
-        </NavStyles>
-    );
+  return (
+    <NavStyles>
+      <ul>
+        <li>
+          <Link to="/">Hot now</Link>
+        </li>
+        <li>
+          <Link to="/pizzas/">Pizza Menu</Link>
+        </li>
+        <li>
+          <Link to="/">
+            <Logo />
+          </Link>
+        </li>
+        <li>
+          <Link to="/slicemasters">SliceMasters</Link>
+        </li>
+        <li>
+          <Link to="/order">Order Ahead!</Link>
+        </li>
+      </ul>
+    </NavStyles>
+  );
 }

@@ -99,11 +99,11 @@ const LogoStyles = styled.div`
 `;
 
 export default function Logo() {
-    return (
-        <LogoStyles className="logo">
-            <div className="inner">
-                <span className="est">EST 1994</span>
-                <h1>
+  return (
+    <LogoStyles className="logo">
+      <div className="inner">
+        <span className="est">EST 1994</span>
+        <h1>
           <span className="slicks">
             <span className="letter S">S</span>
             <span className="letter l">l</span>
@@ -113,9 +113,9 @@ export default function Logo() {
             <span className="letter apos">'</span>
             <span className="letter s">s</span>
           </span>
-                    <span className="slices">slices</span>
-                </h1>
-            </div>
-        </LogoStyles>
-    );
+          <span className="slices">slices</span>
+        </h1>
+      </div>
+    </LogoStyles>
+  );
 }
