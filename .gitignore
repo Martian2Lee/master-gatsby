@@ -77,3 +77,5 @@ yarn-error.log
 finished-files-before-record/
 
 .idea
+
+dist/
