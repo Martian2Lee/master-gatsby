@@ -12,7 +12,7 @@ export default {
       name: 'name',
       title: 'Store Name',
       type: 'string',
-      description: 'Name of the store',
+      description: 'Name of the pizza',
     },
     {
       name: 'slicemaster',

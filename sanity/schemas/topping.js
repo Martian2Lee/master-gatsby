@@ -1,7 +1,7 @@
 import { FaPepperHot as icon } from 'react-icons/fa';
 
 export default {
-  // computer name
+  // Computer Name
   name: 'topping',
   // visible title
   title: 'Toppings',
@@ -18,7 +18,6 @@ export default {
       name: 'vegetarian',
       title: 'Vegetarian',
       type: 'boolean',
-      description: 'Is it vegetarian?',
       options: {
         layout: 'checkbox',
       },

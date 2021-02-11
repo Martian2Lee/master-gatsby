@@ -1,7 +1,7 @@
 import React from 'react';
 import PatchEvent, { set, unset } from 'part:@sanity/form-builder/patch-event';
 
-function createPatchForm(value) {
+function createPatchFrom(value) {
   return PatchEvent.from(value === '' ? unset() : set(Number(value)));
 }
 
@@ -20,13 +20,13 @@ export default function PriceInput({ type, value, onChange, inputComponent }) {
       <input
         type={type.name}
         value={value}
-        onChange={(event) => onChange(createPatchForm(event.target.value))}
+        onChange={event => onChange(createPatchFrom(event.target.value))}
         ref={inputComponent}
       />
     </div>
   );
 }
 
-PriceInput.focus = function () {
+PriceInput.focus = function() {
   this._inputElement.focus();
 };
